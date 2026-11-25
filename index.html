@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zuul ticket reader</title>
+  <script src="https://res.cdn.office.net/teams-js/2.22.0/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family: "Segoe UI", sans-serif; margin: 1.5rem; color: #242424; max-width: 40rem; }
+  </style>
+</head>
+<body>
+  <h3>Zuul ticket reader</h3>
+  <p>
+    This chat is readable by the Zuul SCM CI team's PO toolkit. It reads
+    messages so that service incidents and requests reported here can be drafted
+    into Jira tickets, with a link back to the conversation. A person reviews
+    every ticket before it is created.
+  </p>
+  <ul>
+    <li>It can read this chat's messages only, not any other chat.</li>
+    <li>It cannot post, edit or delete anything in Teams.</li>
+    <li>Message content may be processed by an AI assistant (Cursor) while drafting.</li>
+  </ul>
+  <p>
+    To revoke access, remove the app from this chat. Questions: Mihai Borsu
+    (mihai.borsu@nokia.com).
+  </p>
+
+  <script>
+    microsoftTeams.app.initialize();
+  </script>
+</body>
+</html>
